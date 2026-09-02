@@ -1,0 +1,374 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   نظام التصميم الموحّد — قدراتك · Apple-Inspired Redesign
+   الإصدار: 2.0  · 2026-09-03
+   
+   فلسفة التصميم:
+   · مساحة تنفس وافرة — المحتوى يتنفس
+   · تباين عالٍ بأناقة — أبيض نقي، رماد دافئ جداً
+   · لون واحد بارز — فيروزي رصين، يُستخدم بحكمة
+   · زوايا واسعة — 20–28px للبطاقات، حبّة للأزرار
+   · زجاج ضبابي — للأشرطة العلوية فقط
+   · حركة فيزيائية — منحنى Apple الربيعي
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ═══════════ 01  مرتكزات الهوية — ثابتة عبر الثيمين ═══════════ */
+:root {
+  --brand-turquoise: #00abaf;
+  --brand-turquoise-soft: rgba(0, 171, 175, 0.08);
+  --brand-turquoise-hover: #009598;
+  --brand-blue: #1d9af2;
+  --brand-violet: #852cd0;
+  --brand-deep: #1a1a2e;
+  --brand-green: #1cc182;
+  --brand-orange: #ff6700;
+  --brand-red: #c40000;
+  --brand-yellow: #ffe257;
+  --brand-warning: #ffa300;
+  --brand-dark: #5d6167;
+}
+
+
+/* ═══════════ 02  الطبقة الدلالية ═══════════ */
+[data-theme="light"] {
+  --c-info:    #0066cc;
+  --c-success: #007d4e;
+  --c-warning: #b37400;
+  --c-danger:  #c40000;
+  --c-accent:  #852cd0;
+  --c-teal:    #007a7d;
+  --c-warm:    #b34a00;
+  --c-neutral: #5d6167;
+  --c-yellow:  #856200;
+  --c-blue: var(--c-info);
+  --c-green: var(--c-success);
+  --c-orange: var(--c-warm);
+  --c-red: var(--c-danger);
+  --c-violet: var(--c-accent);
+}
+[data-theme="dark"] {
+  --c-info:    #5ac8fa;
+  --c-success: #30d158;
+  --c-warning: #ff9f0a;
+  --c-danger:  #ff453a;
+  --c-accent:  #bf5af2;
+  --c-teal:    #64d2ff;
+  --c-warm:    #ff9f0a;
+  --c-neutral: #a0a4b0;
+  --c-yellow:  #ffe257;
+  --c-blue: var(--c-info);
+  --c-green: var(--c-success);
+  --c-orange: var(--c-warm);
+  --c-red: var(--c-danger);
+  --c-violet: var(--c-accent);
+}
+
+
+/* ═══════════ 03  الأسطح — Apple-inspired ═══════════
+   أبيض نقي، رمادي دافئ جداً، لا تدرّجات على الخلفيات */
+:root {
+  --surface-page:    #ffffff;
+  --surface-card:    #ffffff;
+  --surface-elevated:#fafafc;
+  --surface-2:       #f5f5f7;
+  --surface-3:       #eeeeef;
+  --surface-rail:    #fafafc;
+  --surface-modal:   #ffffff;
+  --surface-hover:   rgba(0, 0, 0, 0.03);
+  --surface-active:  rgba(0, 0, 0, 0.06);
+  --scrim:           rgba(0, 0, 0, 0.35);
+  --bg-stage:        #000000;
+}
+[data-theme="dark"] {
+  --surface-page:    #000000;
+  --surface-card:    #1c1c1e;
+  --surface-elevated:#2c2c2e;
+  --surface-2:       #1c1c1e;
+  --surface-3:       rgba(255, 255, 255, 0.05);
+  --surface-rail:    #0a0a0a;
+  --surface-modal:   #1c1c1e;
+  --surface-hover:   rgba(255, 255, 255, 0.06);
+  --surface-active:  rgba(255, 255, 255, 0.10);
+  --scrim:           rgba(0, 0, 0, 0.65);
+}
+
+
+/* ═══════════ 04  النصوص — تباين عالٍ بأناقة ═══════════ */
+:root {
+  --ink-1:    #1d1d1f;
+  --ink-2:    #333336;
+  --ink-3:    #86868b;
+  --ink-4:    #a1a1a6;
+  --ink-on-brand: #ffffff;
+  --ink-on-inverse: #f5f5f7;
+  --ink-disabled: #c4c4c7;
+}
+[data-theme="dark"] {
+  --ink-1:    #f5f5f7;
+  --ink-2:    #e5e5e7;
+  --ink-3:    #8e8e93;
+  --ink-4:    #636366;
+  --ink-on-brand: #04202a;
+  --ink-on-inverse: #f5f5f7;
+  --ink-disabled: #48484a;
+}
+
+
+/* ═══════════ 05  الحدود — شعرة أو لا شيء ═══════════ */
+:root {
+  --line:        rgba(0, 0, 0, 0.06);
+  --line-strong: rgba(0, 0, 0, 0.10);
+  --line-focus:  #00abaf;
+  --line-inverse: rgba(255, 255, 255, 0.12);
+}
+[data-theme="dark"] {
+  --line:        rgba(255, 255, 255, 0.08);
+  --line-strong: rgba(255, 255, 255, 0.12);
+  --line-focus:  #00abaf;
+  --line-inverse: rgba(255, 255, 255, 0.12);
+}
+
+
+/* ═══════════ 06  المسافات — واسعة جداً ═══════════ */
+:root {
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+}
+
+
+/* ═══════════ 07  الزوايا — واسعة ═══════════ */
+:root {
+  --radius-xs:  6px;
+  --radius-sm:  10px;
+  --radius-md:  16px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
+  --radius-pill: 999px;
+}
+
+
+/* ═══════════ 08  الظلال — عميقة وطبيعية ═══════════ */
+:root {
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-2: 0 4px 16px rgba(0, 0, 0, 0.06);
+  --shadow-3: 0 8px 32px rgba(0, 0, 0, 0.10);
+  --shadow-elevated: 0 25px 50px -12px rgba(0, 0, 0, 0.12);
+  --shadow-focus: 0 0 0 4px rgba(0, 171, 175, 0.25);
+}
+[data-theme="dark"] {
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.30);
+  --shadow-2: 0 4px 16px rgba(0, 0, 0, 0.40);
+  --shadow-3: 0 8px 32px rgba(0, 0, 0, 0.50);
+  --shadow-elevated: 0 25px 50px -12px rgba(0, 0, 0, 0.55);
+  --shadow-focus: 0 0 0 4px rgba(0, 171, 175, 0.35);
+}
+
+
+/* ═══════════ 09  الخطوط ═══════════ */
+:root {
+  --font-ar:      "Diodrum Arabic", "SF Pro Arabic", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display: var(--font-ar);
+  --font-body:    var(--font-ar);
+  --font-en:      "SF Pro Display", -apple-system, BlinkMacSystemFont, "Manrope", sans-serif;
+  --font-mono:    "SF Mono", "JetBrains Mono", ui-monospace, monospace;
+}
+
+
+/* ═══════════ 10  الحركة — Apple spring ═══════════ */
+:root {
+  --ease:        cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-in:     cubic-bezier(0.4, 0, 1, 1);
+  --ease-out:    cubic-bezier(0, 0, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast:   150ms;
+  --duration-normal: 250ms;
+  --duration-slow:   400ms;
+}
+
+
+/* ═══════════ 11  الأحجام ═══════════ */
+:root {
+  --size-touch:     44px;
+  --size-icon-sm:   16px;
+  --size-icon-md:   20px;
+  --size-icon-lg:   24px;
+  --size-avatar-sm: 32px;
+  --size-avatar-md: 44px;
+  --size-avatar-lg: 72px;
+  --size-hero:      88px;
+  --border-hairline: 0.5px;
+  --border-thin:     1px;
+}
+
+
+/* ═══════════ 12  الأوزان ═══════════ */
+:root {
+  --w-regular:  400;
+  --w-medium:   500;
+  --w-semibold: 600;
+  --w-bold:     700;
+  --w-extrabold: 800;
+}
+
+
+/* ═══════════ 13  مقياس الطباعة — Apple-inspired ═══════════ */
+:root {
+  --text-xs:   11px;
+  --text-sm:   12px;
+  --text-base: 14px;
+  --text-md:   16px;
+  --text-lg:   20px;
+  --text-xl:   24px;
+  --text-2xl:  32px;
+  --text-3xl:  40px;
+  --text-4xl:  56px;
+  --lh-tight:  1.1;
+  --lh-snug:   1.25;
+  --lh-normal: 1.47059;
+  --lh-relaxed: 1.6;
+  --track-tight: -0.022em;
+  --track-normal: 0;
+  --track-wide: 0.02em;
+}
+
+
+/* ═══════════ aliases ═══════════ */
+:root {
+  --calm-hairline: var(--line);
+  --calm-num:      var(--c-success);
+  --calm-page:     var(--surface-page);
+  --calm-row-alt:  var(--surface-2);
+  --calm-title:    var(--c-accent);
+  --calm-surface:  var(--surface-rail);
+  --calm-surface-2: var(--surface-2);
+  --ink-accent:    var(--c-teal);
+  --ink-brand:     var(--c-accent);
+  --ink-strong:    var(--ink-1);
+  --text-4:        var(--ink-3);
+
+  --qd-turquoise: var(--brand-turquoise);
+  --qd-blue:      var(--brand-blue);
+  --qd-purple:    var(--brand-violet);
+  --qd-deep:      var(--brand-deep);
+  --qd-green:     var(--brand-green);
+
+  --qt-turquoise: var(--brand-turquoise);
+  --qt-purple:    var(--brand-violet);
+  --qt-mauve:     var(--brand-deep);
+  --qt-spring:    var(--ease-spring);
+  --qt-ease:      var(--ease);
+
+  --dga-turquoise: var(--brand-turquoise);
+  --dga-blue:      var(--brand-blue);
+  --dga-purple:    var(--brand-violet);
+  --dga-navy:      var(--brand-deep);
+  --dga-green:     var(--brand-green);
+  --dga-sky:       #594aff;
+  --dga-orange:    var(--brand-orange);
+  --dga-red:       var(--brand-red);
+}
+
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   14  المكوّنات المشتركة — Theme Toggle · Mobile Menu · Logo
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── Theme Toggle Button ─── */
+.theme-toggle {
+  inline-size: var(--size-touch);
+  block-size: var(--size-touch);
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  color: var(--ink-3);
+  transition: background-color var(--duration-fast) var(--ease), color var(--duration-fast) var(--ease);
+}
+.theme-toggle:hover {
+  background: var(--surface-hover);
+  color: var(--ink-1);
+}
+.theme-toggle svg {
+  inline-size: 20px;
+  block-size: 20px;
+}
+
+/* ─── Mobile Menu Toggle ─── */
+.mobile-menu-toggle {
+  display: none;
+  inline-size: var(--size-touch);
+  block-size: var(--size-touch);
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  color: var(--ink-2);
+  transition: background-color var(--duration-fast) var(--ease);
+}
+.mobile-menu-toggle:hover { background: var(--surface-hover); }
+.mobile-menu-toggle svg { inline-size: 20px; block-size: 20px; }
+
+/* ─── Logo Image ─── */
+.appbar__logo-img {
+  inline-size: 36px;
+  block-size: 36px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+.auth__logo-img {
+  inline-size: 40px;
+  block-size: 40px;
+  object-fit: contain;
+}
+
+/* ─── Sidebar Mobile Overlay ─── */
+.sidebar {
+  transition: transform var(--duration-normal) var(--ease);
+}
+.sidebar.is-open {
+  transform: translateX(0);
+}
+
+/* ─── Page transition overlay ─── */
+.page-transition {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--surface-page);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 300ms var(--ease);
+}
+.page-transition.is-active {
+  opacity: 1;
+}
+
+/* ─── Smooth scroll globally ─── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ─── Reduced motion respect ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html { scroll-behavior: auto; }
+}
