@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لوحتي — قدراتك</title>
+  <link rel="stylesheet" href="../tokens-apple.css" />
+  <link rel="stylesheet" href="./page.css" />
+  <script src="../shared.js" defer></script>
+</head>
+<body>
+  <div class="nonprod-bar" role="status">صندوق التصميم · الإرسال معطّل · ليست الإنتاج</div>
+
+  <!-- الشريط العلوي — زجاج ضبابي -->
+  <header class="appbar" role="banner">
+    <div class="appbar__inner">
+      <button class="mobile-menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 5H17M3 10H17M3 15H13"/></svg>
+      </button>
+      <a href="../home/" class="appbar__brand">
+        <div class="appbar__logo" aria-hidden="true">
+          <img
+            src="../qudratok-logo.png"
+            alt=""
+            class="appbar__logo-img"
+            data-logo-theme
+            data-logo-light="../qudratok-logo.png"
+            data-logo-dark="../qudratok-logo-ondark.png"
+          />
+        </div>
+        <div class="appbar__brand-text">
+          <strong>قدراتك</strong>
+        </div>
+      </a>
+      <div class="appbar__search" role="search">
+        <svg class="appbar__search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
+          <circle cx="7" cy="7" r="5.5" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M11.5 11.5L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <input type="search" placeholder="ابحث بالمعنى: جهات، برامج، بريد…" />
+      </div>
+      <div class="appbar__actions">
+        <button class="theme-toggle" aria-label="التبديل للوضع الداكن" title="التبديل للوضع الداكن">
+          <svg class="theme-icon-dark" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C10 2 12 4 12 7C12 10 10 12 10 12C10 12 14 11 16 8C18 5 16 2 16 2C16 2 14 4 10 2Z" fill="currentColor"/><path d="M10 1V3M10 17V19M1 10H3M17 10H19M3.34 3.34L4.76 4.76M15.24 15.24L16.66 16.66M3.34 16.66L4.76 15.24M15.24 4.76L16.66 3.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          <svg class="theme-icon-light" width="20" height="20" viewBox="0 0 20 20" fill="none" style="display:none"><path d="M10 14C12.2091 14 14 12.2091 14 10C14 7.79086 12.2091 6 10 6C7.79086 6 6 7.79086 6 10C6 12.2091 7.79086 14 10 14Z" stroke="currentColor" stroke-width="1.5"/><path d="M10 1V3M10 17V19M1 10H3M17 10H19M3.34 3.34L4.76 4.76M15.24 15.24L16.66 16.66M3.34 16.66L4.76 15.24M15.24 4.76L16.66 3.34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="الإشعارات">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 3C7.23858 3 5 5.23858 5 8V12L3 14H17L15 12V8C15 5.23858 12.7614 3 10 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M8 16C8 17.1046 8.89543 18 10 18C11.1046 18 12 17.1046 12 16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          <span class="badge" aria-hidden="true">5</span>
+        </button>
+        <a href="../login/" class="user-chip" title="تسجيل الخروج">
+          <span class="user-chip__avatar" aria-hidden="true">م</span>
+          <span class="user-chip__name">حساب التصميم</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" style="opacity:.4">
+            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="layout">
+    <!-- الشريط الجانبي -->
+    <aside class="sidebar" aria-label="التنقل الرئيسي">
+      <nav class="side">
+        <div class="side__group">
+          <a href="../home/" class="side__item is-active">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="6" height="6" rx="2" fill="currentColor" opacity="0.3"/><rect x="10" y="2" width="6" height="6" rx="2" fill="currentColor"/><rect x="2" y="10" width="6" height="6" rx="2" fill="currentColor"/><rect x="10" y="10" width="6" height="6" rx="2" fill="currentColor" opacity="0.3"/></svg>
+            <span>يومي</span>
+          </a>
+          <a href="#" class="side__item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="3" width="14" height="3" rx="1.5" fill="currentColor" opacity="0.3"/><rect x="2" y="8" width="10" height="3" rx="1.5" fill="currentColor"/><rect x="2" y="13" width="7" height="3" rx="1.5" fill="currentColor" opacity="0.3"/></svg>
+            <span>ما ينتظرني</span>
+          </a>
+          <a href="#" class="side__item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="2" width="6" height="6" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="2" width="6" height="6" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="2" y="10" width="6" height="6" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="10" y="10" width="6" height="6" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+            <span>إدارة العمل</span>
+          </a>
+        </div>
+        <div class="side__group">
+          <span class="side__heading">بيانات</span>
+          <a href="../gov360-id/" class="side__item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="9" r="2.5" fill="currentColor"/></svg>
+            <span>البيانات الحكومية 360</span>
+          </a>
+          <a href="#" class="side__item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 14V4C3 3.44772 3.44772 3 4 3H14C14.5523 3 15 3.44772 15 4V14C15 14.5523 14.5523 15 14 15H4C3.44772 15 3 14.5523 3 14Z" stroke="currentColor" stroke-width="1.5"/><path d="M7 9L9 11L13 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>أرقام تدريب قدراتك</span>
+          </a>
+          <a href="#" class="side__item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 6H15M3 10H15M3 14H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span>أرقام البرنامج الاستشاري</span>
+          </a>
+          <a href="#" class="side__item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2.5" y="3.5" width="13" height="13" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2.5 7.5H15.5" stroke="currentColor" stroke-width="1.5"/><path d="M6 1.5V4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M12 1.5V4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            <span>التقويم</span>
+          </a>
+        </div>
+        <div class="side__group">
+          <span class="side__heading">عام</span>
+          <a href="#" class="side__item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="M9 5.5V9L11.5 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>البرنامج ودوري</span>
+            <span class="side__badge">BETA</span>
+          </a>
+          <a href="#" class="side__item">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 14V5C3 4.44772 3.44772 4 4 4H14C14.5523 4 15 4.44772 15 5V14L13 12L11 14L9 12L7 14L5 12L3 14Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            <span>مركز التصميم</span>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- المحتوى -->
+    <main class="content" role="main">
+      <!-- Tabs -->
+      <div class="tabs" role="tablist" aria-label="أقسام لوحتي">
+        <button class="tab is-active" role="tab" aria-selected="true">نظرة عامة</button>
+        <button class="tab" role="tab">مهامي</button>
+        <button class="tab" role="tab">الفريق</button>
+        <button class="tab" role="tab">مساحتي</button>
+      </div>
+
+      <!-- Hero -->
+      <section class="hero" aria-label="تحية اليوم">
+        <div class="hero__greeting">
+          <span class="hero__date">الخميس · 21 ربيع الأول 1448 هـ</span>
+          <h1 class="hero__title">ليلة هادئة، <span class="hero__name">حساب</span></h1>
+          <p class="hero__sub">12 بنداً ينتظر قرارك · عاجل منها 7</p>
+        </div>
+        <div class="hero__clock" aria-label="الوقت الحالي">
+          <div class="hero__time" id="liveClock">12:43</div>
+          <div class="hero__date-sm">3 سبتمبر 2026</div>
+        </div>
+      </section>
+
+      <!-- KPIs -->
+      <section class="kpis" aria-label="مؤشرات سريعة">
+        <a href="../gov360-id/" class="kpi">
+          <div class="kpi__icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2L12.5 7.5H18L13.5 11L15 17L10 13.5L5 17L6.5 11L2 7.5H7.5L10 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="kpi__label">جهة</div>
+          <div class="kpi__num">594</div>
+          <div class="kpi__sub">في المنظومة</div>
+        </a>
+        <a href="#" class="kpi">
+          <div class="kpi__icon kpi__icon--teal" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2C14.4183 2 18 5.58172 18 10C18 14.4183 14.4183 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2Z" stroke="currentColor" stroke-width="1.5"/><path d="M10 6V10L13 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="kpi__label">خدمة استشارية</div>
+          <div class="kpi__num">2,183</div>
+          <div class="kpi__sub">مقدّمة</div>
+        </a>
+        <a href="#" class="kpi">
+          <div class="kpi__icon kpi__icon--violet" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 7H17M3 11H14M3 15H10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="15" cy="15" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <div class="kpi__label">برنامج تدريبي</div>
+          <div class="kpi__num">360</div>
+          <div class="kpi__sub">منذ الإطلاق</div>
+        </a>
+        <a href="#" class="kpi">
+          <div class="kpi__icon kpi__icon--green" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M3 17C3 13.6863 5.68629 11 9 11H11C14.3137 11 17 13.6863 17 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="kpi__label">متدرب</div>
+          <div class="kpi__num">5,678</div>
+          <div class="kpi__sub">أفرزوا دروس</div>
+        </a>
+      </section>
+
+      <!-- Grid: Quick links + Attention -->
+      <div class="grid-2">
+        <section class="card" aria-labelledby="quicklinks-title">
+          <header class="card__head">
+            <h2 id="quicklinks-title">روابط سريعة</h2>
+          </header>
+          <div class="card__body">
+            <nav class="quick" aria-label="روابط سريعة">
+              <a href="#" class="quick__item">
+                <div class="quick__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2" y="2" width="7" height="7" rx="2" stroke="white" stroke-width="1.5"/><rect x="11" y="2" width="7" height="7" rx="2" stroke="white" stroke-width="1.5"/><rect x="2" y="11" width="7" height="7" rx="2" stroke="white" stroke-width="1.5"/><rect x="11" y="11" width="7" height="7" rx="2" stroke="white" stroke-width="1.5"/></svg>
+                </div>
+                <span class="quick__label">البرنامج ودوري</span>
+              </a>
+              <a href="#" class="quick__item">
+                <div class="quick__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10L8 14L16 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span class="quick__label">التواصل الخارجي</span>
+              </a>
+              <a href="#" class="quick__item">
+                <div class="quick__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M3 6H17M3 10H12M3 14H9" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </div>
+                <span class="quick__label">مؤشّرات الإدارة</span>
+              </a>
+              <a href="#" class="quick__item">
+                <div class="quick__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="7" r="4" stroke="white" stroke-width="1.5"/><path d="M3 17C3 13.6863 5.68629 11 9 11H11C14.3137 11 17 13.6863 17 17" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </div>
+                <span class="quick__label">الجهات والأشخاص</span>
+              </a>
+              <a href="#" class="quick__item">
+                <div class="quick__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><rect x="2.5" y="3.5" width="15" height="15" rx="3" stroke="white" stroke-width="1.5"/><path d="M2.5 8.5H17.5" stroke="white" stroke-width="1.5"/><path d="M6.5 1.5V4.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M13.5 1.5V4.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </div>
+                <span class="quick__label">التقويم</span>
+              </a>
+              <a href="#" class="quick__item">
+                <div class="quick__icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10L8 14L16 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <span class="quick__label">الشهادات</span>
+              </a>
+            </nav>
+          </div>
+        </section>
+
+        <section class="card card--attention" aria-labelledby="attention-title">
+          <header class="card__head">
+            <h2 id="attention-title">يحتاج انتباهك</h2>
+            <span class="chip chip--warn">5</span>
+          </header>
+          <div class="card__body">
+            <ul class="attention" role="list">
+              <li class="attention__item">
+                <div class="attention__dot" aria-hidden="true"></div>
+                <div class="attention__body">
+                  <div class="attention__title">بريد وارد بـ 5 آلاف</div>
+                  <div class="attention__meta">3308 خطوة ينتظر زوايا ولم يُسند للأحد — أقدمها منذ 941 يوماً</div>
+                </div>
+                <a class="attention__action" href="#" aria-label="فتح">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </li>
+              <li class="attention__item">
+                <div class="attention__dot" aria-hidden="true"></div>
+                <div class="attention__body">
+                  <div class="attention__title">رسالة تجاوزت مهلة الرد</div>
+                  <div class="attention__meta">ملاحظة على التقرير — 7d93 — منذ 77 يوماً</div>
+                </div>
+                <a class="attention__action" href="#" aria-label="فتح">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </li>
+              <li class="attention__item">
+                <div class="attention__dot" aria-hidden="true"></div>
+                <div class="attention__body">
+                  <div class="attention__title">رسالة تجاوزت مهلة الرد</div>
+                  <div class="attention__meta">ملاحظة على التقرير — 52df — منذ 65 يوماً</div>
+                </div>
+                <a class="attention__action" href="#" aria-label="فتح">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </li>
+              <li class="attention__item">
+                <div class="attention__dot" aria-hidden="true"></div>
+                <div class="attention__body">
+                  <div class="attention__title">برامج متنوّعة في الإدارة</div>
+                  <div class="attention__meta">7 برامج بدأ حركة منذ 10 أيام — أقدمها منذ 52 يوماً</div>
+                </div>
+                <a class="attention__action" href="#" aria-label="فتح">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </li>
+              <li class="attention__item attention__item--last">
+                <div class="attention__dot" aria-hidden="true"></div>
+                <div class="attention__body">
+                  <div class="attention__title">برنامج تملكه متوقّف</div>
+                  <div class="attention__meta">WS-2026-1642 — Cloud Essentials — في المرحلة 1، بلا حركة منذ 49 يوماً</div>
+                </div>
+                <a class="attention__action" href="#" aria-label="فتح">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="btn btn--primary btn--block">
+              كل ما ينتظري
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M5 3L10 8L5 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- شريط التصميم -->
+  <div class="design-bar" role="region" aria-label="شريط التصميم">
+    <div class="design-bar__head">
+      <strong>وضع التصميم</strong>
+      <button aria-label="إخفاء شريط التصميم">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 3L11 11M11 3L3 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="design-bar__row">
+      <span>الدور</span>
+      <a class="chip-mini is-active" href="#">مشاهد</a>
+      <a class="chip-mini" href="#">محرّر</a>
+      <a class="chip-mini" href="#">مدير إدارة</a>
+      <a class="chip-mini" href="#">مدير عام</a>
+    </div>
+    <div class="design-bar__row">
+      <span>البوابة</span>
+      <a class="chip-mini is-active" href="#">قدراتك</a>
+      <a class="chip-mini" href="#">الاستشارات</a>
+      <a class="chip-mini" href="#">المنصّة الأم</a>
+    </div>
+  </div>
+</body>
+</html>
